@@ -1,0 +1,51 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <script src="index.js"></script>
+            <header>
+                <h1>Generate a <br><span class="accenttxt">random password</span></h1>
+                <p>Never use an insecure password again.</p>
+            </header>
+            <div class="line"></div>
+            <div id="wrapper1">
+                <label class="character-count">Characters:</label>
+                <input type="range" id="character-slider" min="4" max="16" value="8">
+                <p id="slider-value">8</p>
+                <script>
+                    var displayValue = document.getElementById("slider-value")
+                    var sliderValue = document.getElementById("character-slider")
+                    sliderValue.addEventListener('input', function () {
+                        displayValue.textContent = sliderValue.value
+                        passwordLength = sliderValue.value
+                    })
+                </script>
+            </div>
+            <div id="wrapper2">
+                <label class="checkbox-cont">Include letters:
+                    <input type="checkbox" id="letters-box" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-cont">Include numbers:
+                    <input type="checkbox" id="numbers-box">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-cont">Include symbols:
+                    <input type="checkbox" id="symbols-box">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <button id="generate-btn" onclick="generatePassword()">Generate passwords</button>
+            <div class="line"></div>
+            <div id="password-section">
+                <button class="passwordbox" id="password1"></button>
+                <button class="passwordbox" id="password2"></button>
+            </div>
+        </div>
+    </body>
+</html>

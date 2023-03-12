@@ -43,8 +43,14 @@
             <button id="generate-btn" onclick="generatePassword()">Generate passwords</button>
             <div class="line"></div>
             <div id="password-section">
-                <button class="passwordbox" id="password1"></button>
-                <button class="passwordbox" id="password2"></button>
+                <button class="passwordbox" id="password1" onclick="copyPassword(event)"></button>
+                <button class="passwordbox" id="password2" onclick="copyPassword(event)"></button>
+                <script>
+                function copyPassword(event) {
+                navigator.clipboard
+                .writeText(`${event.target.textContent}`)
+                }
+                </script>
             </div>
         </div>
     </body>

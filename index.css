@@ -19,7 +19,7 @@ h1 {
 }
 
 .accenttxt {
-    color: #13d192;
+    color: #1395d1;
 }
 
 .line {
@@ -85,7 +85,7 @@ h1 {
 }
 
 .checkbox-cont input:checked ~ .checkmark {
-    background-color: #13d192;
+    background-color: #1395d1;
 }
 
 .checkmark:after {
@@ -124,7 +124,7 @@ h1 {
     appearance: none;
     width: 26px; 
     height: 26px; 
-    background: #13d192; 
+    background: #138bd1; 
     cursor: pointer;
     border-radius: 4px;
 }
@@ -134,7 +134,7 @@ h1 {
 }
 
 #generate-btn {
-    background: #13d192;
+    background: #1395d1;
     margin: 30px 0;
     border: none;
     border-radius: 5px;
@@ -160,7 +160,7 @@ h1 {
     border: none;
     border-radius: 5px;
     background: #273549;
-    color: #13d192;
+    color: #1395d1;
     transition: .2s;
     transition-timing-function: ease;
 }

@@ -1,2 +1,2 @@
 # Password-Generator
-Password generator project for Scrimba
+Password generator project for Scrimba.
